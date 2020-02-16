@@ -1,0 +1,165 @@
+body {
+  margin: 0;
+  padding: 0;
+
+  font-family: "Roboto", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #283136;
+
+  background-color: #ffffff;
+  background-repeat: no-repeat;
+}
+
+a {
+  text-decoration: none;
+}
+
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+
+.main-navigation {
+  font-size: 16px;
+  line-height: 30px;
+  color: #283136;
+
+  text-transform: uppercase;
+}
+
+.site-navigation,
+.user-navigation {
+  list-style: none;
+}
+
+.site-navigation a,
+.user-navigation a {
+  color: #283136;
+}
+
+.site-navigation a:hover,
+.user-navigation a:hover{
+  color: #fb565a;
+}
+
+.site-navigation a:focus,
+.user-navigation a:focus {
+  color: #bdbdbd;
+}
+
+.button {
+  font: inherit;
+
+  text-align: center;
+  color: #ffffff;
+  vertical-align: middle;
+  text-transform: uppercase;
+
+  background-color: #000000;
+  border: none;
+}
+
+.button.button-red {
+ background-color: #fb565a;
+}
+.button.button-red:hover{
+  background-color: #e74246;
+}
+.button.button-red:focus{
+  color: #e48789;
+  background-color: #d7373b;
+}
+
+.button.button-green {
+  background-color: #00ca74;
+}
+.button.button-green:hover{
+  background-color: #00bc6c;
+}
+.button.button-green:focus{
+  color: #74c69c;
+  background-color: #00aa62;
+}
+
+.button.button-yellow {
+  background-color: #efc84a;
+}
+.button.button-yellow:hover{
+  background-color: #eab534;
+}
+.button.button-yellow:focus{
+  color: #edc47f;
+  background-color: #e5a722;
+}
+
+.footer-friend {
+  font-size: 36px;
+  font-weight: 700;
+}
+
+.footer-discount {
+  line-height: 22px;
+}
+
+.social-button:focus {
+  color: #e37376;
+}
+*/каталог*/
+
+.main-catalogue {
+  font-size: 55px;
+  line-height: 24px;
+  font-weight: 500;
+}
+
+.selection-item {
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.selection-item-menu {
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+}
+
+.net-sale {
+  list-style: none;
+}
+
+.feauters {
+  list-style: none;
+}
+
+.filter {
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.filter-info{
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 400;
+}
+
+.button.button-grey {
+  color: #000000;
+  background-color: #eeeeee;
+}
+.button.button-grey:hover{
+  color: #000000;
+  background-color: #dfdfdf;
+}
+.button.button-grey:focus{
+  color: #a9a9a9;
+  background-color: #d5d5d5;
+}
