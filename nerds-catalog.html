@@ -146,11 +146,18 @@
        </ol>
      </section>
    </div>
-     <section>
-       <h2>Карта</h2>
-       <img src="img/map.png" width="1440" height="416" alt="Наш офис находится па адресу: Санкт-Петербург<br>ул. Б. Конюшенная, д. 19/8">
-       <!--Здесь будет форма -->
+   <section class="map">
+     <h2 class="visually-hidden">Карта</h2>
+
+     <img class="map-marker" src="img/map-marker.png" width="231" height="190" alt="Маркер">
+     <section class="modal">
+       <p class="modal-text">NЁRDS DISIGN STUDIO</p>
+       <p class="modat-text1">191186, Санкт-Петербург<br>ул. Б. Конюшенная, д. 19/8<br>
+         <br>тел. +7(812)275-75-75
+       </p>
+       <button class="button button-red" type="button">НАПИШИТЕ НАМ</button>
      </section>
+   </section>
    </main>
    <footer class="main-footer">
      <div class="footer-social">
@@ -164,38 +171,32 @@
     </div>
    </footer>
 
-   <section>
-     <p>NЁRDS DISIGN STUDIO</p>
-     <p>196186, Санкт-Петербург<br>ул. Б. Конюшенная, д. 19/8<br>
-       тел. +7(812)275-75-75
-     </p>
-     <button class="button button-red" type="button">НАПИШИТЕ НАМ</button>
+   <section class="write write-login">
+     <button class="write-close" type="button"></button>
+     <span class="visually-hidden">Закрыть</span>
+     <h1>Напишите нам</h1>
+
+
+         <form class="user" method="post"
+               action="https://echo.htmlacademy.ru">
+
+           <p>
+             <label for="user-name">Ваше имя:</label>
+             <input id="user-name" type="text"
+                    name="userslogin" placeholder="Имя Фамилия">
+           </p>
+           <p>
+             <label for="user-email">Ваш e-mail:</label>
+             <input id="user-email" type="text"
+                    name="e-mail" placeholder="email@examlpe.com">
+           </p>
+           <p>
+             <label for="user-letter">Текст письма:</label>
+             <input id="user-letter" type="text"
+                    name="letter" placeholder="В свободной форме">
+           </p>
+           <button class="button button-red" type="submit">Отправить</button>
+         </form>
    </section>
-
-   <h1>Напишите нам</h1>
-   <!--крестик сверстать с помощью CSS? -->
-
-       <form class="user" method="post"
-             action="https://echo.htmlacademy.ru">
-             <a href="#"> <img src="img/close-cross.svg" width="=21" height="21" alt="Кнопка закрыть"></a>
-         <p>
-           <label for="user-name">Ваше имя:</label>
-           <input id="user-name" type="text"
-                  name="userslogin" placeholder="Имя Фамилия">
-         </p>
-         <p>
-           <label for="user-email">Ваш e-mail:</label>
-           <input id="user-email" type="text"
-                  name="e-mail" placeholder="email@examlpe.com">
-         </p>
-         <p>
-           <label for="user-letter">Текст письма:</label>
-           <input id="user-letter" type="text"
-                  name="letter" placeholder="В свободной форме">
-         </p>
-         <button class="button button-red" type="submit">Отправить</button>
-       </form>
-
-
   </body>
 </html>
