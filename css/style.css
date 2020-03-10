@@ -635,7 +635,6 @@ td.advert-text8 {
   position: absolute;
   top: 89px;
   right: 389px;
-
 }
 
 .modal {
@@ -687,7 +686,7 @@ td.advert-text8 {
 .write-login {
   top: 1706px;
   left: 240px;
-  width: 500px;
+  width: 960px;
   padding: 50px 60px;
 }
 
@@ -725,6 +724,78 @@ td.advert-text8 {
 
 .write-close::after {
   transform: rotate(-45deg);
+}
+
+.write-login h2 {
+  margin: 0;
+  margin-bottom: 27px;
+
+  font-size: 45px;
+  line-height: 45px;
+  font-weight: 500;
+  color: #000000;
+}
+
+.user-form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.user-item {
+  width: 360px;
+  margin: 0;
+  margin-bottom: 60px;
+}
+
+.user-item label {
+  display: block;
+  margin-bottom: 12px;
+  margin-left: 12px;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 700;
+  color: #000000;
+
+}
+
+.user-item input {
+  box-sizing: border-box;
+  width: 360px;
+  padding-top: 16px;
+  padding-left: 15px;
+  padding-bottom: 13px;
+
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 400;
+  color: #a1a1a1;
+
+  background-color: transparent;
+  border: 2px solid #d7dcde;
+  border-radius: 3px;
+}
+
+.user-item input:hover {
+  border-color: #b4b9bb;
+  color: #a1a1a1;
+}
+
+.user-item input:focus {
+  border-color: #ffffff;
+  color: #444444;
+}
+
+.user-item input:focus:invalid {
+  border-color: #e74246;
+  color: #e74246;
+}
+
+.user .button {
+  display: block;
+  width: 100%;
+  margin-top: 10px;
+  margin-right: 0;
 }
 
 
