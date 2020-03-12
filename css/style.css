@@ -1081,9 +1081,17 @@ td.advert-text8 {
   background-color: green;
 }
 
+.catalog-matrix {
+  width: 760px;
+  padding-left: 140px;
+  margin-top: 44px;
+}
 
 .catalog-choice {
-
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  margin-bottom: 32px;
 }
 
 .choice {
@@ -1092,12 +1100,45 @@ td.advert-text8 {
   font-weight: 700;
   color: #000;
   text-transform: uppercase;
+  padding-right: 267px;
 }
 
-.catalog-matrix {
-  width: 760px;
-  padding-left: 140px;
+.choice-text {
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+  color: #000;
+  text-transform: uppercase;
+  padding-right: 26px;
 }
+
+.choice-text:nth-child(4n) {
+  padding-right: 48px;
+}
+
+.icon1  {
+  fill-opacity: 0.2;
+  cursor: pointer;
+  padding-right: 15px;
+}
+
+.icon1:nth-child(2n) {
+  padding-right: 0;
+}
+
+.icon1:hover path {
+  fill: #a6a6a6;
+}
+
+.icon1:focus path,
+.icon1:active path {
+  fill: 231f20;
+}
+
+
+
+
+
 
 .catalog-list ul {
   display: flex;
