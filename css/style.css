@@ -42,6 +42,8 @@ a {
 
 .main-header {
   background-color: #eeeeee;
+  max-width: 1440px;
+  margin: 0 auto;
 }
 
 .main-navigation {
@@ -1080,14 +1082,17 @@ td.advert-text8 {
 }
 
 
+.catalog-choice {
 
+}
 
-
-
-
-
-
-
+.choice {
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: 700;
+  color: #000;
+  text-transform: uppercase;
+}
 
 .catalog-matrix {
   width: 760px;
