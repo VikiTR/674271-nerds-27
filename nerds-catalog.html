@@ -30,69 +30,93 @@
     </header>
    <main class="wrapper">
      <h1 class="visually-hidden">Каталог Нёрдс</h1>
-     <p class="main-catalogue">Магазин готовых шаблонов</p>
+     <section class="shop-catalog">
+     <p class="main-catalog">Магазин готовых шаблонов</p>
+     </section>
+
+  <div class="catalog-columns">
 
      <section class="selection">
-       <h2 class="selection-item">СТОИМОСТЬ</h2>
-     </section>
-     <section>
-       <h2 class="selection-item">СОРТИРОВАТЬ:</h2>
-       <ul>
-         <li>ПО ЦЕНЕ</li>
-         <li>ПО ТИПУ</li>
-         <li>ПО НАЗВАНИЮ</li>
-       </ul>
-       <img src="img/icon-down-dir.svg" width="11" height="10" alt="Стрелка вниз">
-       <img src="img/icon-up-dir.svg" width="11" height="10" alt="Стрелка вверх">
-     </section>
-    <div class="catalog-columns">
+       <form class="all-filters" method="get" action="https://echo.htmlacademy.ru">
+         <fieldset class="filter-item">
+         <legend>Стоимость:</legend>
+         <div class="range-filter">
+           <div class="range-controls">
+             <div class="scale">
+              <div class="bar"></div>
+             </div>
+             <div class="toggle toggle-min"></div>
+             <div class="toggle toggle-max"></div>
+          </div>
+          <div class="price-controls">
+            <label class="min-price">от <input name="min-price" type="number" value="0"></label>
+            <label class="max-price">до <input name="max-price" type="number" value="15000"></label>
+          </div>
+        </div>
+         </fieldset>
+         <fildset class="filters">
+           <legend>Сетка</legend>
+           <ul>
+             <li class="net-sale">
+               <input class="visually-hidden net-sale-input net-sale-input-radio" type="radio" value="adaptability" name="net-group" id="net-sale-adaptive" checked>
+               <label for="net-sale-adaptive">Адаптивная</label>
+             </li>
+             <li class="net-sale">
+               <input class="visually-hidden net-sale-input net-sale-input-radio" type="radio" value="fixing" name="net-group" id="net-sale-fixed" checked>
+               <label for="net-sale-fixed">Фиксированная</label>
+             </li>
+             <li class="net-sale">
+               <input class="visually-hidden net-sale-input net-sale-input-radio" type="radio" value="rubbering" name="net-group" id="net-sale-rubber" checked>
+               <label for="net-sale-rubber">Резиновая</label>
+             </li>
+           </ul>
+       </fildset>
+       <fildset class="selection-item">
+         <legend>Особенности</legend>
+         <ul>
+           <li class="feauters">
+             <input class="visually-hidden feauters-input feauters-input-checkbox" type="checkbox" name="sliders" id="feauters-sliders" checked>
+             <label for="feauters-sliders">Слайдер</label>
+           </li>
+           <li class="feauters">
+             <input class="visually-hidden feauters-input feauters-input-checkbox" type="checkbox" name="benefits" id="feauters-benefits" checked>
+             <label for="feauters-benefits">Блок преимуществ</label>
+           </li>
+           <li class="feauters">
+             <input class="visually-hidden feauters-input feauters-input-checkbox" type="checkbox" name="news" id="feauters-news" checked>
+             <label for="feauters-news">Новости</label>
+           </li>
+           <li class="feauters">
+             <input class="visually-hidden feauters-input feauters-input-checkbox" type="checkbox" name="galery" id="feauters-galery" checked>
+             <label for="feauters-galery">Галерея</label>
+           </li>
+           <li class="feauters">
+             <input class="visually-hidden feauters-input feauters-input-checkbox" type="checkbox" name="cart" id="feauters-cart" checked>
+             <label for="feauters-cart">Корзина</label>
+           </li>
+         </ul>
+     </fildset>
+      </form>
+      <a class="button button-grey" href="#">ПОКАЗАТЬ</a>
 
-     <section class="filters">
-       <h2 class="selection-item">СЕТКА</h2>
-       <ul class="net-sale">
-         <li>
-           <img src="img/net-on.svg" width="25" height="25" alt="Адаптивная">
-           <p class="selection-item-menu">Адаптивная</p>
-         </li>
-         <li>
-           <img src="img/net-off.svg" width="25" height="25" alt="Фиксированная">
-           <p class="selection-item-menu">Фиксированная</p>
-         </li>
-         <li>
-           <img src="img/net-off.svg" width="25" height="25" alt="Резиновая">
-           <p class="selection-item-menu">Резиновая</p>
-         </li>
-       </ul>
-
-       <h2 class="selection-item">ОСОБЕННОСТИ</h2>
-       <ul class="feauters">
-         <li>
-           <img src="img/checkbox-on.svg" width="27" height="23" alt="Слайдер">
-           <p class="selection-item-menu">Слайдер</p>
-         </li>
-         <li>
-           <img src="img/checkbox-off.svg" width="23" height="23" alt="Блок преимуществ">
-           <p class="selection-item-menu">Блок преимуществ</p>
-         </li>
-         <li>
-           <img src="img/checkbox-on.svg" width="27" height="23" alt="Новости">
-           <p class="selection-item-menu">Новости</p>
-         </li>
-         <li>
-           <img src="img/checkbox-off.svg" width="23" height="23" alt="Галерея">
-           <p class="selection-item-menu">Галерея</p>
-         </li>
-         <li>
-           <img src="img/checkbox-off.svg" width="23" height="23" alt="Корзина">
-           <p class="selection-item-menu">Корзина</p>
-         </li>
-       </ul>
-       <a class="button button-grey" href="#">ПОКАЗАТЬ</a>
      </section>
+
+
 
      <section class="catalog-matrix">
+
+         <h2 class="selection-item">СОРТИРОВАТЬ:</h2>
+
+           <p>ПО ЦЕНЕ</p>
+           <p>ПО ТИПУ</p>
+           <p>ПО НАЗВАНИЮ</p>
+
+         <img src="img/icon-down-dir.svg" width="11" height="10" alt="Стрелка вниз">
+         <img src="img/icon-up-dir.svg" width="11" height="10" alt="Стрелка вверх">
+
        <h2 class="visually-hidden">Каталог шаблонов</h2>
-       <ul class="catalog-list">
+      <section class="catalog-list">
+       <ul>
          <li class="catalog-item">
            <h3 class="visually-hidden">SEDONA</h3>
            <img src="img/img-sedona.jpg" width="360" height="576" alt=alt="SEDONA.Информационный сайт для туристов">
@@ -137,14 +161,16 @@
            <button class="button button-red" type="button">9 900 РУБ.</button>
        </li>
        </ul>
-       <ol>
-         <li><a>1</a></li>
-         <li><a href="#">2</a></li>
-         <li><a href="#">3</a></li>
-         <li><a href="#">СЛЕДУЮЩАЯ</a></li>
-       </ol>
      </section>
+       </section>
+
    </div>
+   <ol>
+     <li><a>1</a></li>
+     <li><a href="#">2</a></li>
+     <li><a href="#">3</a></li>
+     <li><a href="#">СЛЕДУЮЩАЯ</a></li>
+   </ol>
    <section class="map">
      <h2 class="visually-hidden">Карта</h2>
 

@@ -1,7 +1,7 @@
 body {
   margin: 0;
   padding: 0;
-  width: 1440px;
+
   font-family: "Roboto", Arial, sans-serif;
   font-size: 16px;
   line-height: 24px;
@@ -45,7 +45,7 @@ a {
 }
 
 .main-navigation {
-  width: 1160px;
+  min-width: 1160px;
   display: flex;
   font-size: 16px;
   line-height: 30px;
@@ -162,15 +162,9 @@ a {
   color: #bdbdbd;
 }
 
-/* как сделать нижнее подчеркивание?
-.site-navigation a:active,
-.user-navigation a:active {
-  color: #bdbdbd;
-}
-*/
-
 .wrapper {
-
+  max-width: 1440px;
+  margin: 0 auto;
 }
 
 .slider {
@@ -314,7 +308,7 @@ a {
 }
 
 .menu {
-  width: 1440px;
+  min-width: 1440px;
   display: flex;
   justify-content: center;
   margin: 0;
@@ -756,7 +750,6 @@ td.advert-text8 {
   line-height: 18px;
   font-weight: 700;
   color: #000000;
-
 }
 
 .user-item input {
@@ -830,55 +823,276 @@ td.advert-text8 {
 каталог
 */
 
+.shop-catalog {
+  margin: 0;
+  padding-top: 68px;
+  background-color: #eeeeee;
+  min-height: 163px;
+  text-align: center;
+}
 
-.main-catalogue {
+.main-catalog {
+  margin: 0;
   font-size: 55px;
-  line-height: 24px;
-  font-weight: 500;
+  line-height: 55px;
+  font-weight: 600;
 }
 
-.catalog-columns {
-  width: 1160px;
-  display: flex;
-  justify-content: center;
+.selection {
+  margin-top: 60px;
+
+  max-width: 260px;
 }
 
-.filters {
-  width: 260px;
+.all-filters fieldset {
+  margin: 0;
+  padding: 0;
+  border: none;
 }
 
-.selection-item {
+.all-filters legend {
   font-size: 18px;
-  line-height: 24px;
+  line-height: 30px;
+  text-transform: uppercase;
   font-weight: 700;
+  color: #000;
+}
+
+.all-filters ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.filter-item {
+  margin-bottom: 63px;
+}
+
+.range-filter {
+  width: 260px;
+  margin-top: 49px;
+}
+
+.range-controls {
+  position: relative;
+
+  height: 41px;
+  margin-bottom: 15px;
+  padding-top: 39px;
+  padding-right: 20px;
+  padding-left: 20px;
+  background-color: #f1f1f1;
+
+  border-radius: 5px;
+}
+
+.range-controls .scale {
+  height: 2px;
+
+  background: #d7dcde;
+}
+
+.range-controls .bar {
+  width: 70%;
+  height: 2px;
+
+  background: #00ca74;
+}
+
+.range-controls .toggle {
+  position: absolute;
+  top: 31px;
+  left: 0;
+
+  width: 4px;
+  height: 4px;
+  padding: 0;
+
+  border: 8px solid #ffffff;
+  background-color: #ababab;
+  box-shadow: 0 2px 1px 0 #cfcfcf;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.range-controls .toggle-min {
+  left: 18px;
+}
+
+.range-controls .toggle-max {
+  left: 160px;
+}
+
+.price-controls {
+  font-size: 0;
+}
+
+.price-controls label {
+  display: inline-block;
+  width: 50%;
+
+  font-size: 16px;
   text-transform: uppercase;
 }
 
-.selection-item-menu {
+.price-controls input {
+  width: 60px;
+  padding: 8px 10px;
+  margin-left: 10px;
+
+  font-family: Roboto, Arial, sans-serif;
   font-size: 16px;
-  line-height: 20px;
-  font-weight: 400;
+  text-align: center;
+  color: #283136;
+  border: none;
+  border-radius: 5px;
+  background: #f1f1f1;
+}
+
+.max-price {
+  text-align: right;
+}
+
+.filters legend {
+  margin-bottom: 21px;
 }
 
 .net-sale {
   margin: 0;
   padding: 0;
+  margin-bottom: 25px;
+  padding-left: 36px;
 
-  list-style: none;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+}
+
+.net-sale label {
+  position: relative;
+
+  display: block;
+
+  cursor: pointer;
+  user-select: none;
+}
+
+.net-sale-input-radio:hover,
+.net-sale-input-radio:focus {
+  opacity: 0.4;
+}
+
+.net-sale-input-radio + label::before {
+  content: "";
+  position: absolute;
+  left: -36px;
+  top: -5px;
+
+  width: 18px;
+  height: 18px;
+
+  border: 5px solid #b8b8b8;
+  border-radius: 50%;
+}
+
+.net-sale-input-radio:checked + label::after {
+  content: "";
+
+  position: absolute;
+  top: 5px;
+  left: -26px;
+
+  width: 9px;
+  height: 9px;
+
+  background-color: #b8b8b8;
+  border-radius: 50%;
+}
+
+
+.net-sale-input:disabled + label {
+  color: #ededed;
+
+  opacity: 0.1;
+}
+
+.selection-item legend {
+  margin-bottom: 27px;
 }
 
 .feauters {
   margin: 0;
   padding: 0;
+  margin-bottom: 27px;
+  padding-left: 36px;
 
-  list-style: none;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+}
+
+.selection-item label {
+  position: relative;
+  display: block;
+
+  cursor: pointer;
+  user-select: none;
+}
+
+.input[type="checkbox"] + label::before {
+  content: "";
+  position: absolute;
+  left: -36px;
+  top: -2px;
+  width: 23px;
+  height: 23px;
+
+  background-image: url("..img/checkbox-off.svg");
+  background-repeat: no-repeat;
+}
+
+.feauters-input-checkbox + label::before {
+  position: absolute;
+  background-image: url("../img/checkbox-off.svg");
+  background-repeat: no-repeat;
+  border: none;
+  left: -36px;
+  top: -2px;
+  width: 27px;
+  height: 23px;
+}
+
+.feauters-input-checkbox:checked + label::after {
+  background-image: url(../img/checkbox-on.svg);
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  background-color: green;
+}
+
+
+
+
+
+
+
+
+
+.catalog-columns {
+  margin: 0;
+  width: 1160px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
 }
 
 .catalog-matrix {
   width: 760px;
+  padding-left: 40px;
 }
 
-.catalog-list {
+.catalog-list ul {
   display: flex;
   flex-wrap: wrap;
   padding: 0;
