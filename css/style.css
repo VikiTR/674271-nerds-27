@@ -838,9 +838,18 @@ td.advert-text8 {
   font-weight: 600;
 }
 
+.catalog-columns {
+  margin: 0;
+  width: 1440px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+
+}
+
 .selection {
   margin-top: 60px;
-
+  margin-left: 140px;
   max-width: 260px;
 }
 
@@ -1078,18 +1087,11 @@ td.advert-text8 {
 
 
 
-.catalog-columns {
-  margin: 0;
-  width: 1160px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
 
-}
 
 .catalog-matrix {
   width: 760px;
-  padding-left: 40px;
+  padding-left: 140px;
 }
 
 .catalog-list ul {
