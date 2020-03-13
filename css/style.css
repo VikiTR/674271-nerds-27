@@ -640,7 +640,7 @@ td.advert-text8 {
   color: #000000;
 
   background-color: #ffffff;
-  background-image: url("img/pattern-light.jpg");
+  background-image: url("../img/pattern-light.jpg");
   background-position: 0 0;
   background-repeat: repeat;
   width: 270px;
@@ -680,7 +680,7 @@ td.advert-text8 {
 }
 
 .write-login {
-  top: 1706px;
+  top: -100px;
   left: 240px;
   width: 960px;
   padding: 50px 60px;
@@ -796,6 +796,7 @@ td.advert-text8 {
 
 
 .main-footer {
+  position: relative;
   display: flex;
   justify-content: center;
 
@@ -1020,12 +1021,36 @@ td.advert-text8 {
   border-radius: 50%;
 }
 
+.net-sale-input-radio:hover + label::before {
+  border-color: #4d4d4d;
+}
+
+.net-sale-input-radio:hover + label::after {
+  background-color: #4d4d4d;
+}
+
+
+.net-sale-input-radio:active + label::before {
+  border-color: #4d4d4d;
+}
+
+.net-sale-input-radio:active + label::after {
+  background-color: #4d4d4d;
+}
+
 
 .net-sale-input:disabled + label {
   color: #ededed;
-
-  opacity: 0.1;
 }
+
+.net-sale-input:disabled + label::after {
+  background-color: #ededed;
+}
+
+.net-sale-input:disabled + label::before {
+  border-color: #ededed;
+}
+
 
 .selection-item legend {
   margin-bottom: 27px;
@@ -1050,27 +1075,33 @@ td.advert-text8 {
   user-select: none;
 }
 
-.input[type="checkbox"] + label::before {
+input[type="checkbox"] + label::before {
   content: "";
   position: absolute;
   left: -36px;
   top: -2px;
-  width: 23px;
+  width: 27px;
   height: 23px;
 
-  background-image: url("..img/checkbox-off.svg");
+  background: url("../img/checkbox-off.svg");
   background-repeat: no-repeat;
 }
 
-.feauters-input-checkbox + label::before {
-  position: absolute;
-  background-image: url("../img/checkbox-off.svg");
-  background-repeat: no-repeat;
-  border: none;
-  left: -36px;
-  top: -2px;
-  width: 27px;
-  height: 23px;
+input[type="checkbox"]:checked + label::before {
+    background: url("../img/checkbox-on.svg");
+    background-repeat: no-repeat;
+  }
+
+input[type="checkbox"]:disabled + label::before {
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 23 23"><path fill="#ededed" d="M20 2c.542 0 1 .458 1 1v17c0 .542-.458 1-1 1H3c-.542 0-1-.458-1-1V3c0-.542.458-1 1-1h17m0-2H3C1.35 0 0 1.35 0 3v17c0 1.65 1.35 3 3 3h17c1.65 0 3-1.35 3-3V3c0-1.65-1.35-3-3-3z"/></svg>');
+}
+
+input[type="checkbox"]:checked:disabled + label::before {
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="27" height="23" viewBox="0 0 27 23"><path fill="#ededed" d="M7.285 7.486l-2.829 2.829 7.783 7.783L26.171 4.166l-2.828-2.829-11.104 11.102z"/><path fill="#ededed" d="M21 20c0 .542-.458 1-1 1H3c-.542 0-1-.458-1-1V3c0-.542.458-1 1-1h16.908L21.493.415A2.96 2.96 0 0 0 20 0H3C1.35 0 0 1.35 0 3v17c0 1.65 1.35 3 3 3h17c1.65 0 3-1.35 3-3v-9.829l-2 2V20z"/></svg>');
+}
+
+input[type="checkbox"]:disabled + label {
+  color: #ededed;
 }
 
 .feauters-input-checkbox:checked + label::after {
@@ -1116,23 +1147,29 @@ td.advert-text8 {
   padding-right: 48px;
 }
 
-.icon1  {
+.icon-down,
+.icon-up {
   fill-opacity: 0.2;
   cursor: pointer;
   padding-right: 15px;
 }
 
-.icon1:nth-child(2n) {
+.icon-up {
   padding-right: 0;
 }
 
-.icon1:hover path {
+.icon-down:hover path,
+.icon-up:hover path {
   fill: #a6a6a6;
+  fill-opacity: 0.6;
 }
 
-.icon1:focus path,
-.icon1:active path {
-  fill: 231f20;
+.icon-down:focus path,
+.icon-down:active path,
+.icon-up:focus path,
+.icon-up:active path {
+  fill: #231f20;
+  fill-opacity: 1;
 }
 
 
@@ -1150,13 +1187,39 @@ td.advert-text8 {
 }
 
 .catalog-item {
+  position: relative;
   width: 360px;
   margin-bottom: 33px;
   margin-right: 40px;
+  text-align: center;
 }
 
 .catalog-item:nth-child(2n) {
   margin-right: 0;
+}
+
+.catalog-item path:hover {
+  fill-opacity: 1;
+}
+
+.catalog-item .action-item {
+  position:absolute;
+  left: 0;
+  top: 391px;
+  width: 360px;
+  height: 231px;
+  background-color: #eeeeee;
+  z-index: 10;
+  cursor: pointer;
+}
+
+.action-item .button .button-red {
+  display: block;
+  width: 200px;
+  margin: 0 auto;
+
+
+
 }
 
 .catalog {
@@ -1164,12 +1227,16 @@ td.advert-text8 {
   line-height: 30px;
   font-weight: 700;
   text-transform: uppercase;
+  color: #000000;
+
 }
 
 .catalog-info {
   font-size: 16px;
   line-height: 18px;
   font-weight: 400;
+
+  color: #666666;
 }
 
 .button.button-grey {

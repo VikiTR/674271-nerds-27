@@ -58,7 +58,7 @@
            <legend>Сетка</legend>
            <ul>
              <li class="net-sale">
-               <input class="visually-hidden net-sale-input net-sale-input-radio" type="radio" value="adaptability" name="net-group" id="net-sale-adaptive" checked>
+               <input class="visually-hidden net-sale-input net-sale-input-radio" disabled type="radio" value="adaptability" name="net-group" id="net-sale-adaptive" checked>
                <label for="net-sale-adaptive">Адаптивная</label>
              </li>
              <li class="net-sale">
@@ -75,11 +75,11 @@
          <legend>Особенности</legend>
          <ul>
            <li class="feauters">
-             <input class="visually-hidden feauters-input feauters-input-checkbox" type="checkbox" name="sliders" id="feauters-sliders" checked>
+             <input class="visually-hidden feauters-input feauters-input-checkbox" type="checkbox" name="sliders" id="feauters-sliders" checked disabled>
              <label for="feauters-sliders">Слайдер</label>
            </li>
            <li class="feauters">
-             <input class="visually-hidden feauters-input feauters-input-checkbox" type="checkbox" name="benefits" id="feauters-benefits" checked>
+             <input class="visually-hidden feauters-input feauters-input-checkbox" type="checkbox" name="benefits" id="feauters-benefits" disabled>
              <label for="feauters-benefits">Блок преимуществ</label>
            </li>
            <li class="feauters">
@@ -110,10 +110,10 @@
            <p class="choice-text">По типу</p>
            <p class="choice-text">По названию</p>
         <p class="choice-icon">
-         <svg class="icon1" xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10">
+         <svg class="icon-down" xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10">
            <path fill="#231F20" d="M5.5 10L0 0h11"/>
          </svg>
-         <svg class="icon1" xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10">
+         <svg class="icon-up" xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10">
            <path fill="#231F20" d="M5.5 0L0 10h11z"/>
          </svg>
        </p>
@@ -121,53 +121,79 @@
        <h2 class="visually-hidden">Каталог шаблонов</h2>
       <section class="catalog-list">
        <ul>
+
          <li class="catalog-item">
            <h3 class="visually-hidden">SEDONA</h3>
-           <img src="img/browser.svg" width="360" height="40" alt="Строка браузера">
+           <svg xmlns="http://www.w3.org/2000/svg" width="360" height="40" viewBox="0 0 360 40">
+             <path fill="#4D4D4D" fill-opacity="0.12" d="M356 0H4C1.8 0 0 1.8 0 4v36h360V4c0-2.2-1.8-4-4-4zM22.991 27a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm23.011 0a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm23.011 0a7 7 0 1 1 0-14 7 7 0 0 1 0 14z"/>
+           </svg>
            <img src="img/img-sedona.jpg" width="360" height="576" alt="SEDONA.Информационный сайт для туристов">
-           <p class="catalog"><a href="#">SEDONA</a></p>
-           <p class="catalog-info">Информационный сайт для туристов</p>
-           <button class="button button-red" type="button">9 900 РУБ.</button>
+           <div class="action-item">
+             <p class="catalog"><a href="#">SEDONA</a></p>
+             <p class="catalog-info">Информационный сайт<br> для туристов</p>
+             <button class="button button-red" type="button">9 900 РУБ.</button>
+           </div>
          </li>
+
          <li class="catalog-item">
          <h3 class="visually-hidden">PINK APP</h3>
-         <img src="img/browser.svg" width="360" height="40" alt="Строка браузера">
+         <svg xmlns="http://www.w3.org/2000/svg" width="360" height="40" viewBox="0 0 360 40">
+           <path fill="#4D4D4D" fill-opacity="0.12" d="M356 0H4C1.8 0 0 1.8 0 4v36h360V4c0-2.2-1.8-4-4-4zM22.991 27a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm23.011 0a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm23.011 0a7 7 0 1 1 0-14 7 7 0 0 1 0 14z"/>
+         </svg>
          <img src="img/img-pink.jpg" width="360" height="576" alt="PINK APP.Продуктовый лендинг">
-         <p class="catalog"><a href="#">PINK APP</a></p>
-         <p class="catalog-info">Продуктовый лендинг<br>приложения для iOS и Android</p>
+         <div class="action-item">
+           <p class="catalog"><a href="#">PINK APP</a></p>
+           <p class="catalog-info">Продуктовый лендинг<br>приложения для iOS и Android</p>
            <button class="button button-red" type="button">9 900 РУБ.</button>
+        </div>
         </li>
          <li class="catalog-item">
            <h3 class="visually-hidden">Barbershop BORODINSKI</h3>
-           <img src="img/browser.svg" width="360" height="40" alt="Строка браузера">
+           <svg xmlns="http://www.w3.org/2000/svg" width="360" height="40" viewBox="0 0 360 40">
+             <path fill="#4D4D4D" fill-opacity="0.12" d="M356 0H4C1.8 0 0 1.8 0 4v36h360V4c0-2.2-1.8-4-4-4zM22.991 27a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm23.011 0a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm23.011 0a7 7 0 1 1 0-14 7 7 0 0 1 0 14z"/>
+           </svg>
            <img src="img/img-barbershop.jpg" width="360" height="576" alt="Barbershop BORODINSKI">
-           <p class="catalog"><a href="#">BORODINSKI</a></p>
-           <p class="catalog-info">Стрижка у нас - это выгодно!</p>
-           <button class="button button-red" type="button">9 900 РУБ.</button>
+          <div class="action-item">
+             <p class="catalog"><a href="#">BORODINSKI</a></p>
+             <p class="catalog-info">Стрижка у нас - это выгодно!</p>
+             <button class="button button-red" type="button">9 900 РУБ.</button>
+         </div>
          </li>
          <li class="catalog-item">
            <h3 class="visually-hidden">MISHKA</h3>
-           <img src="img/browser.svg" width="360" height="40" alt="Строка браузера">
+           <svg xmlns="http://www.w3.org/2000/svg" width="360" height="40" viewBox="0 0 360 40">
+             <path fill="#4D4D4D" fill-opacity="0.12" d="M356 0H4C1.8 0 0 1.8 0 4v36h360V4c0-2.2-1.8-4-4-4zM22.991 27a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm23.011 0a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm23.011 0a7 7 0 1 1 0-14 7 7 0 0 1 0 14z"/>
+           </svg>
            <img src="img/img-mishka.jpg" width="360" height="576" alt="MISHKA.Милые штуки ручной работы для дома">
-           <p class="catalog"><a href="#">MISHKA</a></p>
-           <p class="catalog-info">Милые штуки ручной работы для дома</p>
-           <button class="button button-red" type="button">9 900 РУБ.</button>
+           <div class="action-item">
+             <p class="catalog"><a href="#">MISHKA</a></p>
+             <p class="catalog-info">Милые штуки ручной работы для дома</p>
+             <button class="button button-red" type="button">9 900 РУБ.</button>
+           </div>
          </li>
          <li class="catalog-item">
            <h3 class="visually-hidden">A+</h3>
-           <img src="img/browser.svg" width="360" height="40" alt="Строка браузера">
+           <svg xmlns="http://www.w3.org/2000/svg" width="360" height="40" viewBox="0 0 360 40">
+             <path fill="#4D4D4D" fill-opacity="0.12" d="M356 0H4C1.8 0 0 1.8 0 4v36h360V4c0-2.2-1.8-4-4-4zM22.991 27a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm23.011 0a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm23.011 0a7 7 0 1 1 0-14 7 7 0 0 1 0 14z"/>
+           </svg>
            <img src="img/img-aplus.jpg" width="360" height="576" alt="Aplus">
-           <p class="catalog"><a href="#">A+</a></p>
-           <p class="catalog-info">Учеба ещё никогда не была такой интересной!</p>
-           <button class="button button-red" type="button">9 900 РУБ.</button>
+          <div class="action-item">
+             <p class="catalog"><a href="#">A+</a></p>
+             <p class="catalog-info">Учеба ещё никогда не была такой интересной!</p>
+             <button class="button button-red" type="button">9 900 РУБ.</button>
+          </div>
       </li>
          <li class="catalog-item">
            <h3 class="visually-hidden">КВАСТ</h3>
-           <img src="img/browser.svg" width="360" height="40" alt="Строка браузера">
+           <svg xmlns="http://www.w3.org/2000/svg" width="360" height="40" viewBox="0 0 360 40">
+             <path fill="#4D4D4D" fill-opacity="0.12" d="M356 0H4C1.8 0 0 1.8 0 4v36h360V4c0-2.2-1.8-4-4-4zM22.991 27a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm23.011 0a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm23.011 0a7 7 0 1 1 0-14 7 7 0 0 1 0 14z"/>
+           </svg>
            <img src="img/img-kvast.jpg" width="360" height="576" alt="kvast">
-           <p class="catalog"><a href="#">КВАСТ</a></p>
-           <p class="catalog-info">Крафтовый квас всему голова!</p>
-           <button class="button button-red" type="button">9 900 РУБ.</button>
+           <div class="action-item">
+             <p class="catalog"><a href="#">КВАСТ</a></p>
+             <p class="catalog-info">Крафтовый квас всему голова!</p>
+             <button class="button button-red" type="button">9 900 РУБ.</button>
+           </div>
        </li>
        </ul>
      </section>
@@ -203,34 +229,35 @@
       <p class="footer-friend">Давайте дружить, это выгодно!</p>
       <p class="footer-discount">Скидка 10% для друзей из социальных сетей</p>
     </div>
+    <section class="write write-login">
+      <button class="write-close" type="button"></button>
+      <span class="visually-hidden">Закрыть</span>
+      <h1>Напишите нам</h1>
+
+
+          <form class="user" method="post"
+                action="https://echo.htmlacademy.ru">
+
+            <p>
+              <label for="user-name">Ваше имя:</label>
+              <input id="user-name" type="text"
+                     name="userslogin" placeholder="Имя Фамилия">
+            </p>
+            <p>
+              <label for="user-email">Ваш e-mail:</label>
+              <input id="user-email" type="text"
+                     name="e-mail" placeholder="email@examlpe.com">
+            </p>
+            <p>
+              <label for="user-letter">Текст письма:</label>
+              <input id="user-letter" type="text"
+                     name="letter" placeholder="В свободной форме">
+            </p>
+            <button class="button button-red" type="submit">Отправить</button>
+          </form>
+    </section>
    </footer>
 
-   <section class="write write-login">
-     <button class="write-close" type="button"></button>
-     <span class="visually-hidden">Закрыть</span>
-     <h1>Напишите нам</h1>
 
-
-         <form class="user" method="post"
-               action="https://echo.htmlacademy.ru">
-
-           <p>
-             <label for="user-name">Ваше имя:</label>
-             <input id="user-name" type="text"
-                    name="userslogin" placeholder="Имя Фамилия">
-           </p>
-           <p>
-             <label for="user-email">Ваш e-mail:</label>
-             <input id="user-email" type="text"
-                    name="e-mail" placeholder="email@examlpe.com">
-           </p>
-           <p>
-             <label for="user-letter">Текст письма:</label>
-             <input id="user-letter" type="text"
-                    name="letter" placeholder="В свободной форме">
-           </p>
-           <button class="button button-red" type="submit">Отправить</button>
-         </form>
-   </section>
   </body>
 </html>
