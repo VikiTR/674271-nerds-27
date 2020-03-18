@@ -1,3 +1,5 @@
+/* prefixed by https://autoprefixer.github.io (PostCSS: v7.0.26, autoprefixer: v9.7.3) */
+
 body {
   margin: 0;
   padding: 0;
@@ -33,7 +35,8 @@ a {
   border: 0;
   padding: 0;
   white-space: nowrap;
-  clip-path: inset(100%);
+  -webkit-clip-path: inset(100%);
+          clip-path: inset(100%);
   overflow: hidden;
 }
 
@@ -272,7 +275,8 @@ a {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
   width: 6px;
   height: 6px;
   background-color: #fff;
@@ -783,7 +787,7 @@ a {
 }
 
 .write {
-  display: none;
+
   position: absolute;
   top: -560px;
   left: 240px;
@@ -838,11 +842,13 @@ a {
 
 
 .write-close::before {
-  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
 }
 
 .write-close::after {
-  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
 }
 
 .write-login h2 {
@@ -913,11 +919,12 @@ a {
 
 .user-form input:hover {
   border-color: #b4b9bb;
-
 }
 
 .user-form input:focus,
-.user-form input:active {
+.user-form input:active,
+.user-form textarea:focus,
+.user-form textarea:active {
   border-color: #000;
 }
 
@@ -970,6 +977,7 @@ a {
 }
 
 .footer-friends {
+  margin: 0;
 }
 
 .footer-friend {
@@ -1043,6 +1051,7 @@ a {
 .selection {
   margin-top: 55px;
   max-width: 260px;
+  margin-right: 140px;
 }
 
 .all-filters fieldset {
@@ -1168,7 +1177,10 @@ a {
   position: relative;
   display: block;
   cursor: pointer;
-  user-select: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 
 .net-sale-input-radio:hover,
@@ -1191,7 +1203,7 @@ a {
   content: "";
   position: absolute;
   top: 4px;
-  left: -26px;
+  left: -27px;
   width: 9px;
   height: 9px;
   background-color: #b8b8b8;
@@ -1248,7 +1260,10 @@ a {
   position: relative;
   display: block;
   cursor: pointer;
-  user-select: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 
 .selection-item {
@@ -1327,7 +1342,7 @@ input[type="checkbox"]:disabled + label {
 
 .catalog-choice {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   justify-content: flex-start;
   margin-bottom: 53px;
 }
@@ -1342,13 +1357,19 @@ input[type="checkbox"]:disabled + label {
   padding-right: 268px;
 }
 
+.choise-panel {
+  width: 360px;
+  display: flex;
+  justify-content: space-between;
+}
+
 .choise-texts {
   width: 271px;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
   margin-top: 2px;
-  margin-right: 48px;
+  
 }
 
 .choice-text {
