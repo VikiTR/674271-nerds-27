@@ -17,10 +17,10 @@
         </a>
         <div class="container">
         <ul class="site-navigation">
-          <li class="site-navigation1"><a href="studio.html">Студия</a></li>
-          <li class="site-navigation2"><a href="clients.html">Клиенты</a></li>
-          <li class="active site-navigation3"><a href="nerds-catalog.html">Магазин</a></li>
-          <li class="site-navigation4"><a href="contacts.html">Контакты</a></li>
+          <li class="site-navigation-1"><a href="studio.html">Студия</a></li>
+          <li class="site-navigation-2"><a href="clients.html">Клиенты</a></li>
+          <li class="active site-navigation-3"><a href="nerds-catalog.html">Магазин</a></li>
+          <li class="site-navigation-4"><a href="contacts.html">Контакты</a></li>
         </ul>
         <ul class="user-navigation">
           <li >
@@ -35,6 +35,7 @@
      <section class="shop-catalog">
      <p class="main-catalog">Магазин готовых шаблонов</p>
      </section>
+  <section class="all-content">
   <div class="catalog-columns">
      <section class="selection">
        <form class="all-filters" method="get" action="https://echo.htmlacademy.ru">
@@ -102,17 +103,17 @@
      <section class="catalog-matrix">
      <section class="catalog-choice">
          <h2 class="choice">Сортировать:</h2>
-         <div class="choise-panel">
-         <div class="choise-texts">
+         <div class="choice-panel">
+         <div class="choice-texts">
            <p class="choice-text">По цене</p>
            <p class="choice-text">По типу</p>
            <p class="choice-text">По названию</p>
          </div>
         <p class="choice-icon">
-         <svg class="icon-down" xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10">
+         <svg class="icon-down" xmlns="http://www.w3.org/2000/svg" width="11" height="10" alt="Вниз" viewBox="0 0 11 10">
            <path fill="#231F20" d="M5.5 10L0 0h11"></path>
          </svg>
-         <svg class="icon-up" xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10">
+         <svg class="icon-up" xmlns="http://www.w3.org/2000/svg" width="11" height="10" alt="Вверх" viewBox="0 0 11 10">
            <path fill="#231F20" d="M5.5 0L0 10h11z"></path>
          </svg>
        </p>
@@ -128,9 +129,11 @@
            </svg>
            <img class="catalog-img" src="img/img-sedona.jpg" width="360" height="576" alt="SEDONA.Информационный сайт для туристов">
            <div class="action-item">
+             <div class="action-inner">
              <h4 class="catalog"><a href="#">SEDONA</a></h4>
-             <p class="catalog-info">Информационный сайт<br> для туристов</p>
+             <p class="catalog-info">Информационный сайт для туристов</p>
              <button class="button button-red button-catalog" type="button">9 900 РУБ.</button>
+           </div>
            </div>
          </li>
          <li class="catalog-item">
@@ -140,9 +143,11 @@
          </svg>
          <img class="catalog-img" src="img/img-pink.jpg" width="360" height="576" alt="PINK APP.Продуктовый лендинг">
          <div class="action-item">
+           <div class="action-inner">
            <h4 class="catalog"><a href="#">PINK APP</a></h4>
-           <p class="catalog-info">Продуктовый лендинг<br>приложения для iOS и Android</p>
+           <p class="catalog-info">Продуктовый лендинг приложения для iOS и Android</p>
            <button class="button button-red button-catalog" type="button">9 900 РУБ.</button>
+         </div>
         </div>
         </li>
          <li class="catalog-item">
@@ -152,9 +157,11 @@
            </svg>
            <img class="catalog-img" src="img/img-barbershop.jpg" width="360" height="576" alt="Barbershop BORODINSKI">
           <div class="action-item">
+            <div class="action-inner">
              <h4 class="catalog"><a href="#">BORODINSKI</a></h4>
              <p class="catalog-info">Стрижка у нас - это выгодно!</p>
              <button class="button button-red button-catalog" type="button">9 900 РУБ.</button>
+           </div>
          </div>
          </li>
          <li class="catalog-item">
@@ -164,9 +171,11 @@
            </svg>
            <img class="catalog-img" src="img/img-mishka.jpg" width="360" height="576" alt="MISHKA.Милые штуки ручной работы для дома">
            <div class="action-item">
+             <div class="action-inner">
              <h4 class="catalog"><a href="#">MISHKA</a></h4>
              <p class="catalog-info">Милые штуки ручной работы для дома</p>
              <button class="button button-red button-catalog" type="button">9 900 РУБ.</button>
+           </div>
            </div>
          </li>
          <li class="catalog-item">
@@ -176,9 +185,11 @@
            </svg>
            <img class="catalog-img" src="img/img-aplus.jpg" width="360" height="576" alt="Aplus">
           <div class="action-item">
+            <div class="action-inner">
              <h4 class="catalog"><a href="#">A+</a></h4>
              <p class="catalog-info">Учеба ещё никогда не была такой интересной!</p>
              <button class="button button-red button-catalog" type="button">9 900 РУБ.</button>
+           </div>
           </div>
       </li>
          <li class="catalog-item">
@@ -208,9 +219,10 @@
      <img class="map-marker" src="img/map-marker.png" width="231" height="190" alt="Маркер">
      <section class="modal">
        <p class="modal-text">NЁRDS DESIGN STUDIO</p>
-       <p class="modat-text1">191186, Санкт-Петербург<br>ул. Б. Конюшенная, д. 19/8<br>
-         <br>тел. +7 (812) 275-75-75
-       </p>
+       <p class="modal-text-1">191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 </p>
+          <span class="phone">
+            <a href="tel:+ 78122757575">тел. +7 (812) 275-75-75</a>
+          </span>
        <button class="button button-red" type="button">НАПИШИТЕ НАМ</button>
      </section>
    </section>
@@ -262,6 +274,7 @@
             <button class="button button-red button-write" type="submit">Отправить</button>
           </form>
     </section>
+  </section>
    </footer>
   </body>
 </html>
