@@ -396,7 +396,6 @@ a {
 .button.button-green {
   display: inline-block;
   padding: 17px 40px 15px 40px;
-
   font-weight: 500;
   font-size: 16px;
   line-height: 18px;
@@ -423,7 +422,6 @@ a {
 .button.button-yellow {
   display: inline-block;
   padding: 17px 40px 15px 40px;
-
   font-weight: 500;
   font-size: 16px;
   line-height: 18px;
@@ -431,7 +429,6 @@ a {
   color: #fff;
   vertical-align: top;
   text-decoration: none;
-
   background: #efc84a;
   border-radius: 3px;
   border: none;
@@ -803,7 +800,6 @@ a {
 }
 
 .write {
-  display: none;
   position: absolute;
   top: -552px;
   left: 50%;
@@ -1305,8 +1301,8 @@ input[type="checkbox"] + label::before {
 }
 
 input[type="checkbox"]:checked + label::before {
-    background: url(../img/checkbox-on.svg);
-    background-repeat: no-repeat;
+  background: url(../img/checkbox-on.svg);
+  background-repeat: no-repeat;
   }
 
 input[type="checkbox"]:disabled + label::before {
@@ -1393,7 +1389,6 @@ input[type="checkbox"]:disabled + label {
   justify-content: space-between;
   flex-wrap: wrap;
   margin-top: 2px;
-
 }
 
 .choice-text {
