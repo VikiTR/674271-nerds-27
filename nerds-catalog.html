@@ -100,30 +100,11 @@
       </form>
       <button type="submit" class="button button-grey" >Показать</button>
      </section>
-
      <section class="catalog-matrix">
-
-     <section class="catalog-choice">
-         <h2 class="choice">Сортировать:</h2>
-         <div class="choice-panel">
-         <div class="choice-texts">
-           <p class="choice-text">По цене</p>
-           <p class="choice-text">По типу</p>
-           <p class="choice-text">По названию</p>
-         </div>
-        <p class="choice-icon">
-         <svg class="icon-down" xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10">
-           <path fill="#231F20" d="M5.5 10L0 0h11"></path>
-         </svg>
-         <svg class="icon-up" xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10">
-           <path fill="#231F20" d="M5.5 0L0 10h11z"></path>
-         </svg>
-       </p>
-        </div>
-     </section>
-
        <h2 class="visually-hidden">Каталог шаблонов</h2>
       <section class="catalog-list">
+        <div>
+          <h2 class="choice">Сортировать:</h2>
        <ul>
          <li class="catalog-item">
            <h3 class="visually-hidden">SEDONA</h3>
@@ -140,20 +121,6 @@
            </div>
          </li>
          <li class="catalog-item">
-         <h3 class="visually-hidden">PINK APP</h3>
-         <svg xmlns="http://www.w3.org/2000/svg" width="360" height="40" viewBox="0 0 360 40">
-           <path fill="#4D4D4D" fill-opacity="0.12" d="M356 0H4C1.8 0 0 1.8 0 4v36h360V4c0-2.2-1.8-4-4-4zM22.991 27a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm23.011 0a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm23.011 0a7 7 0 1 1 0-14 7 7 0 0 1 0 14z"></path>
-         </svg>
-         <img class="catalog-img" src="img/img-pink.jpg" width="360" height="576" alt="PINK APP.Продуктовый лендинг">
-         <div class="action-item">
-           <div class="action-inner">
-           <h4 class="catalog"><a href="#">PINK APP</a></h4>
-           <p class="catalog-info">Продуктовый лендинг приложения для iOS и Android</p>
-           <button class="button button-red button-catalog" type="button">9 900 РУБ.</button>
-         </div>
-        </div>
-        </li>
-         <li class="catalog-item">
            <h3 class="visually-hidden">Barbershop BORODINSKI</h3>
            <svg xmlns="http://www.w3.org/2000/svg" width="360" height="40" viewBox="0 0 360 40">
              <path fill="#4D4D4D" fill-opacity="0.12" d="M356 0H4C1.8 0 0 1.8 0 4v36h360V4c0-2.2-1.8-4-4-4zM22.991 27a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm23.011 0a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm23.011 0a7 7 0 1 1 0-14 7 7 0 0 1 0 14z"></path>
@@ -166,20 +133,6 @@
              <button class="button button-red button-catalog" type="button">9 900 РУБ.</button>
            </div>
          </div>
-         </li>
-         <li class="catalog-item">
-           <h3 class="visually-hidden">MISHKA</h3>
-           <svg xmlns="http://www.w3.org/2000/svg" width="360" height="40" viewBox="0 0 360 40">
-             <path fill="#4D4D4D" fill-opacity="0.12" d="M356 0H4C1.8 0 0 1.8 0 4v36h360V4c0-2.2-1.8-4-4-4zM22.991 27a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm23.011 0a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm23.011 0a7 7 0 1 1 0-14 7 7 0 0 1 0 14z"></path>
-           </svg>
-           <img class="catalog-img" src="img/img-mishka.jpg" width="360" height="576" alt="MISHKA.Милые штуки ручной работы для дома">
-           <div class="action-item">
-             <div class="action-inner">
-             <h4 class="catalog"><a href="#">MISHKA</a></h4>
-             <p class="catalog-info">Милые штуки ручной работы для дома</p>
-             <button class="button button-red button-catalog" type="button">9 900 РУБ.</button>
-           </div>
-           </div>
          </li>
          <li class="catalog-item">
            <h3 class="visually-hidden">A+</h3>
@@ -195,6 +148,55 @@
            </div>
           </div>
       </li>
+    </ul>
+  </div>
+  <div>
+    <section class="catalog-choice">
+        <div class="choice-panel">
+        <div class="choice-texts">
+          <p class="choice-text">По цене</p>
+          <p class="choice-text">По типу</p>
+          <p class="choice-text">По названию</p>
+        </div>
+       <p class="choice-icon">
+        <svg class="icon-down" xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10">
+          <path fill="#231F20" d="M5.5 10L0 0h11"></path>
+        </svg>
+        <svg class="icon-up" xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10">
+          <path fill="#231F20" d="M5.5 0L0 10h11z"></path>
+        </svg>
+      </p>
+       </div>
+    </section>
+    <ul>
+         <li class="catalog-item">
+         <h3 class="visually-hidden">PINK APP</h3>
+         <svg xmlns="http://www.w3.org/2000/svg" width="360" height="40" viewBox="0 0 360 40">
+           <path fill="#4D4D4D" fill-opacity="0.12" d="M356 0H4C1.8 0 0 1.8 0 4v36h360V4c0-2.2-1.8-4-4-4zM22.991 27a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm23.011 0a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm23.011 0a7 7 0 1 1 0-14 7 7 0 0 1 0 14z"></path>
+         </svg>
+         <img class="catalog-img" src="img/img-pink.jpg" width="360" height="576" alt="PINK APP.Продуктовый лендинг">
+         <div class="action-item">
+           <div class="action-inner">
+           <h4 class="catalog"><a href="#">PINK APP</a></h4>
+           <p class="catalog-info">Продуктовый лендинг приложения для iOS и Android</p>
+           <button class="button button-red button-catalog" type="button">9 900 РУБ.</button>
+         </div>
+        </div>
+        </li>
+         <li class="catalog-item">
+           <h3 class="visually-hidden">MISHKA</h3>
+           <svg xmlns="http://www.w3.org/2000/svg" width="360" height="40" viewBox="0 0 360 40">
+             <path fill="#4D4D4D" fill-opacity="0.12" d="M356 0H4C1.8 0 0 1.8 0 4v36h360V4c0-2.2-1.8-4-4-4zM22.991 27a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm23.011 0a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm23.011 0a7 7 0 1 1 0-14 7 7 0 0 1 0 14z"></path>
+           </svg>
+           <img class="catalog-img" src="img/img-mishka.jpg" width="360" height="576" alt="MISHKA.Милые штуки ручной работы для дома">
+           <div class="action-item">
+             <div class="action-inner">
+             <h4 class="catalog"><a href="#">MISHKA</a></h4>
+             <p class="catalog-info">Милые штуки ручной работы для дома</p>
+             <button class="button button-red button-catalog" type="button">9 900 РУБ.</button>
+           </div>
+           </div>
+         </li>
          <li class="catalog-item">
            <h3 class="visually-hidden">КВАСТ</h3>
            <svg xmlns="http://www.w3.org/2000/svg" width="360" height="40" viewBox="0 0 360 40">
@@ -208,6 +210,7 @@
            </div>
        </li>
        </ul>
+     </div>
        <div class="pagination">
        <ul class="pagination-list">
          <li ><a class="pagination-item pagination-active">1</a></li>
@@ -218,7 +221,6 @@
      </div>
      </section>
      </section>
-
    </div>
    <section class="map">
      <h2 class="visually-hidden">Карта</h2>
@@ -232,17 +234,8 @@
        <button class="button button-red" type="button">НАПИШИТЕ НАМ</button>
      </section>
    </section>
-
   </section>
-
-
-
-
-
    </main>
-
-
-
    <footer class="main-footer">
      <div class="footer-wrapp">
       <div class="footer-social">

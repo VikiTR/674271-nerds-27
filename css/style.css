@@ -1359,6 +1359,9 @@ input[type="checkbox"]:disabled + label {
 .catalog-matrix {
   max-width: 760px;
   margin-top: 58px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .catalog-choice {
@@ -1375,7 +1378,7 @@ input[type="checkbox"]:disabled + label {
   font-weight: 700;
   color: #000;
   text-transform: uppercase;
-  padding-right: 268px;
+  padding: 0 0 41px 0;
 }
 
 .choice-panel {
@@ -1446,13 +1449,17 @@ input[type="checkbox"]:disabled + label {
   fill-opacity: 1;
 }
 
-.catalog-list ul {
+.catalog-list {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   padding: 0;
   margin: 0 0 28px 0;
+}
+
+.catalog-list ul {
   list-style: none;
+  padding: 0;
 }
 
 .catalog-item {
@@ -1537,6 +1544,7 @@ input[type="checkbox"]:disabled + label {
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
+  padding-top: 28px;
 }
 
 .pagination-list {
